@@ -1,0 +1,20 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.14"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "3.0"
+  }
+}

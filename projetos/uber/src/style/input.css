@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-image-uber: url("/src/assets/bguber.png");
+    --background-image-city: url("/src/assets/bg-city.png");
+  }
+
+  .bg-uber {
+    background-image: var(--background-image-uber);
+  }
+
+  .bg-city {
+    background-image: var(--background-image-city);
+  }
+}
