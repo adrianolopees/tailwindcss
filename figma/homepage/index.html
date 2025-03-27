@@ -5,22 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/assets/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
 
-<body>
-  <header class="bg-black text-slate-200 h-52 w-full flex items-center justify-center ">
+<body class="inter bg-black">
+  <header class=" text-slate-200 h-52 w-full flex items-center justify-center ">
 
     <div class="h-28 w-full mx-12 border rounded-2xl border-gray-600">
       <div class="grid grid-cols-12 h-full items-center ">
 
         <div class=" row-span-2 col-span-2 w-full h-full flex items-center justify-center border-r border-gray-600">
           <span class="text-2xl">
-            <img src="public/images/logo.webp" alt="logo da pagina" class="w-16">
+            <img src="public/images/logo.webp" alt="logo da pagina" class="w-16 ">
           </span>
         </div>
 
-        <nav class="col-span-8 h-full w-full flex justify-center gap-6 items-center border-b border-gray-600">
+        <nav class="col-span-8 h-full w-full flex justify-center gap-8 items-center border-b border-gray-600">
           <a href="">Projects</a>
           <a href="">About </a>
           <a href="">Team </a>
@@ -28,20 +34,58 @@
         </nav>
 
         <div class="col-span-2 h-full w-full flex items-center justify-center border-b border-l border-gray-600">
-          <img src="public/images/menu-de-hamburguer.png" alt="" class="w-20 h-5">
+          <i class="bi bi-list text-3xl inline-block font-thin scale-x-[4] scale-y-[0.9]"></i>
         </div>
 
         <div class="col-span-5 h-full w-full flex items-center justify-center border-r border-gray-600">
-          <a href="">Services</a>
+          <a href=""><i class="bi bi-pencil pr-2 text-sm"></i>Services</a>
         </div>
 
         <div class="col-span-5 h-full w-full flex items-center justify-center">
-          Get in touch
+          <i class="bi bi-calendar pr-2 text-sm"></i>Get in touch
         </div>
       </div>
 
     </div>
   </header>
+  <main>
+    <section id="home" class="w-full h-screen">
+
+      <div class="flex items-center justify-center w-full">
+        <h1 class="text-white text-[140px] leading-none font-semibold max-w-7xl text-center"> Krate design and
+          motion
+          studio</h1>
+      </div>
+
+      <div class="flex items-center justify-center ">
+        <img src="public/images/home.webp" alt="imagem home ondas coloridas" class="mt-32 ">
+      </div>
+
+      <div class="flex flex-row m-12 gap-x-56 font-semibold items-center justify-center mt-32">
+        <div class="text-white text-4xl max-w-3xl">
+          <p>We are passionate about creating visually stunning and functional solutions that communicate effectively. I
+            have a keen eye for detai and a deeo undrstanding of defign principles, which I use to deliver porjects that
+            exceed my clients' expectations.</p>
+        </div>
+
+        <div class="text-gray-400 text-3xl flex flex-row gap-20 leading-loose">
+          <ul class="">
+            <li><i class="bi bi-bing pr-3"></i>Krate</li>
+            <li><i class="bi bi-bug-fill pr-3"></i>Massui</li>
+            <li><i class="bi bi-bucket-fill pr-3"></i>Altall</li>
+          </ul>
+          <ul>
+            <li><i class="bi bi-car-front-fill pr-3"></i>Kalo</li>
+            <li><i class="bi bi-cc-circle-fill pr-3"></i>Kinua</li>
+            <li><i class="bi bi-circle-square pr-3"></i>TANO</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="src/js/main.js" type="module"></script>
 </body>
 
 </html>
