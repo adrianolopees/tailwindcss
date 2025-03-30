@@ -15,8 +15,8 @@
 </head>
 
 <body class="inter bg-black">
-  <header class=" text-slate-200 h-52 w-full flex items-center justify-center mx-auto px-60">
-    <div class="h-28 w-full mx-12 border rounded-2xl border-gray-600">
+  <header class=" text-slate-200 flex items-center justify-center h-52 mx-auto px-60">
+    <div class="h-28 w-full border rounded-2xl border-gray-600">
       <div class="grid grid-cols-12 h-full items-center ">
 
         <div class=" row-span-2 col-span-2 w-full h-full flex items-center justify-center border-r border-gray-600">
@@ -47,10 +47,11 @@
 
     </div>
   </header>
+
   <main>
-    <section id="home" class="w-full min-h-screen mx-auto px-60">
+    <section id="home" class="w-full min-h-screen mx-auto">
       <div class="flex items-center justify-center  ">
-        <h1 class="text-white text-[140px] leading-none font-semibold max-w-7xl text-center"> Krate design and
+        <h1 class="text-white text-9xl leading-none font-semibold max-w-7xl text-center"> Krate design and
           motion
           studio</h1>
       </div>
@@ -59,16 +60,19 @@
         <img src="public/images/home.webp" alt="imagem home ondas coloridas" class="mt-32 ">
       </div>
 
-      <div class="flex flex-row m-12 gap-x-56 font-semibold items-center justify-center mt-32">
-        <div class="text-white text-4xl max-w-3xl">
-          <p>We are passionate about creating visually stunning and functional solutions that communicate effectively. I
-            have a keen eye for detail and a deep understanding of design principles, which I use to deliver projects
+      <div class="font-semibold mt-32 flex flex-row justify-between px-60 ">
+        <div class="text-white text-4xl max-w-3xl ">
+          <p>We are passionate about creating visually <br>
+            stunning and functional solutions that<br>
+            communicate effectively. I
+            have a keen eye for <br>
+            detail and a deep understanding of design principles, which I use to deliver projects
             that
             exceed my clients' expectations.</p>
         </div>
 
         <div class="text-gray-400 text-3xl flex flex-row gap-20 leading-loose">
-          <ul class="space-y-4">
+          <ul class="space-y-4 ">
             <li class="flex items-center"><i class="bi bi-bing pr-3"></i><span>Krate</span></li>
             <li class="flex items-center"><i class="bi bi-bug-fill pr-3"></i><span>Massui</span></li>
             <li class="flex items-center"><i class="bi bi-bucket-fill pr-3"></i><span>Altall</span></li>
@@ -83,54 +87,85 @@
 
     </section>
 
-    <section id="services" class="w-full min-h-screen mx-auto px-60 mt-32 ">
-      <div>
+    <section id="services" class="w-full mx-auto px-60 mt-32 ">
+      <div class="text-white">
+        <a href="#" class="text-xl font-semibold"><i class="bi bi-arrow-return-right"></i>
+          Our Services</a>
 
-        <div class="text-white">
-          <a href="#" class="text-xl font-semibold"><i class="bi bi-arrow-return-right"></i>
-            Our Services</a>
+        <ul class="mt-16 text-4xl font-semibold flex flex-col gap-9">
+          <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
+            <div class="flex items-center">
+              <img src="public/images/brand.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              Brand Identity
+            </div>
+            <i class="bi bi-plus"></i>
+          </li>
 
-          <ul class="mt-16 text-4xl font-semibold flex flex-col gap-9">
+          <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
+            <div class="flex items-center">
+              <img src="public/images/consultancy.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              Consultancy
+            </div>
+            <i class="bi bi-plus"></i>
+          </li>
 
-            <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
-              <div class="flex items-center">
-                <img src="public/images/brand.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
-                Brand Identity
-              </div>
-              <i class="bi bi-plus"></i>
-            </li>
-            <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
-              <div class="flex items-center">
-                <img src="public/images/consultancy.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
-                Consultancy
-              </div>
-              <i class="bi bi-plus"></i>
-            </li>
-            <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
-              <div class="flex items-center">
-                <img src="public/images/app.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
-                App Development
-              </div>
-              <i class="bi bi-plus"></i>
-            </li>
-            <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
-              <div class="flex items-center">
-                <img src="public/images/web.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
-                Web & Mobile Design
-              </div>
-              <i class="bi bi-plus"></i>
-            </li>
-            <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
-              <div class="flex items-center">
-                <img src="public/images/pack.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
-                Packaging
-              </div>
-              <i class="bi bi-plus"></i>
-            </li>
-          </ul>
+          <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
+            <div class="flex items-center">
+              <img src="public/images/app.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              App Development
+            </div>
+            <i class="bi bi-plus"></i>
+          </li>
 
+          <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
+            <div class="flex items-center">
+              <img src="public/images/web.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              Web & Mobile Design
+            </div>
+            <i class="bi bi-plus"></i>
+          </li>
+
+          <li class="flex items-center border-b-gray-600 border-b pb-9 justify-between">
+            <div class="flex items-center">
+              <img src="public/images/pack.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              Packaging
+            </div>
+            <i class="bi bi-plus"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class=" text-white w-full mx-auto px-60 mt-32">
+      <a href="#" class="text-xl font-semibold">
+        <i class="bi bi-arrow-return-right"></i> Recent Work
+      </a>
+      <div class="mt-16">
+        <div class="grid grid-cols-2 gap-8">
+          <div class="rounded-3xl border border-slate-500 pb-4">
+            <img src="https://picsum.photos/500/400?random=1" alt="Imagem aleatória"
+              class="rounded-tr-lg rounded-tl-lg w-full h-auto" />
+            <p class="text-2xl font-semibold p-10">Imagem Aleatória 1</p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-500 pb-4">
+            <img src="https://picsum.photos/500/400?random=2" alt="Imagem aleatória"
+              class="rounded-tr-lg rounded-tl-lg w-full" />
+            <p class="text-2xl font-semibold p-10">Imagem Aleatória 2</p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-500 pb-4">
+            <img src="https://picsum.photos/500/400?random=3" alt="Imagem aleatória"
+              class="rounded-tr-lg rounded-tl-lg w-full" />
+            <p class="text-2xl font-semibold p-10">Imagem Aleatória 3</p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-500 pb-4">
+            <img src="https://picsum.photos/500/400?random=4" alt="Imagem aleatória"
+              class="rounded-tr-lg rounded-tl-lg w-full" />
+            <p class="text-2xl font-semibold p-10">Imagem Aleatória 4</p>
+          </div>
         </div>
-
       </div>
     </section>
   </main>
