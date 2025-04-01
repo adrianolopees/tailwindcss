@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -14,8 +14,7 @@
   <title>Document</title>
 </head>
 
-<body class="inter bg-black">
-  <!--   <header class=" flex items-center justify-center h-52 mx-auto px-56">-->
+<body class="bg-black">
   <header class="container mx-auto px-32">
     <div class="h-28 w-full border rounded-2xl border-gray-800 text-slate-200  mt-12 mb-6">
       <div class="grid grid-cols-12 h-full items-center ">
@@ -27,10 +26,10 @@
         </div>
 
         <nav class="col-span-8 h-full w-full flex justify-center gap-8 items-center border-b border-gray-800">
-          <a href="">Projects</a>
-          <a href="">About </a>
-          <a href="">Team </a>
-          <a href="">Contact</a>
+          <a href="#work">Projects</a>
+          <a href="#home">About </a>
+          <a href="#members">Team </a>
+          <a href="#talk">Contact</a>
         </nav>
 
         <div class="col-span-2 h-full w-full flex items-center justify-center border-b border-l border-gray-800">
@@ -38,11 +37,11 @@
         </div>
 
         <div class="col-span-5 h-full w-full flex items-center justify-center border-r border-gray-800">
-          <a href=""><i class="bi bi-pencil pr-2 text-sm"></i>Services</a>
+          <a href="#services"><i class="bi bi-pencil pr-2 text-sm"></i>Services</a>
         </div>
 
         <div class="col-span-5 h-full w-full flex items-center justify-center">
-          <i class="bi bi-calendar pr-2 text-sm"></i>Get in touch
+          <a href="#footer"><i class="bi bi-calendar pr-2 text-sm"></i>Get in touch</a>
         </div>
       </div>
 
@@ -50,7 +49,6 @@
   </header>
 
   <main>
-
     <section id="home" class="container mx-auto px-32">
       <div class="flex items-center justify-center  ">
         <h1 class="text-white text-9xl leading-none font-semibold max-w-7xl text-center"> Krate design and
@@ -254,58 +252,58 @@
       </div>
     </section>
   </main>
-  <footer>
-    <header class="container mx-auto px-32">
-      <div class="h-52 w-full border rounded-2xl border-gray-800 text-slate-200  mt-12 mb-6">
-        <div class="grid grid-cols-12 grid-rows-2 h-full items-center ">
 
-          <div
-            class="row-span-2 col-span-2 w-full h-full flex items-center justify-center flex-row border-r border-gray-800">
-            <span class="text-2xl">
-              <img src="public/images/logo.webp" alt="logo da pagina" class="w-16 ">
-            </span>
-            <p class="font-semibold text-2xl">Compser</p>
-          </div>
+  <footer id="footer" class="container mx-auto px-32 mb-20">
+    <div class="h-52 w-full border rounded-2xl border-gray-800 text-slate-200  mt-12 mb-6">
+      <div class="grid grid-cols-12 grid-rows-2 h-full items-center ">
 
-          <nav class="col-span-4 h-full w-full flex justify-center gap-8 items-center border-b border-gray-800">
-            <a href="">Projects</a>
-            <a href="">About </a>
-            <a href="">Team </a>
-            <a href="">Contact</a>
-          </nav>
-
-          <div
-            class="col-span-6 h-full w-full flex items-center justify-center border-b border-l border-gray-800 text-2xl font-semibold">
-            adriano@gmail.com
-          </div>
-
-          <div class="col-span-3 h-full w-full flex items-center justify-center border-r border-gray-800">
-            <a href=""><i class="bi bi-pencil pr-2 text-sm"></i>Services</a>
-          </div>
-
-          <div class="col-span-3 h-full w-full flex items-center justify-center gap-4 border-r border-gray-800">
-            <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
-              <i class="bi bi-facebook text-white"></i>
-            </a>
-            <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
-              <i class="bi bi-instagram text-white"></i>
-            </a>
-            <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
-              <i class="bi bi-twitter text-white"></i>
-            </a>
-            <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
-              <i class="bi bi-envelope text-white"></i>
-            </a>
-          </div>
-
-          <div class="col-span-4 h-full w-full flex items-center justify-center">
-            &copy; 2025 Adriano Frontend Developer
-          </div>
+        <div
+          class="row-span-2 col-span-2 w-full h-full flex items-center justify-center flex-row border-r border-gray-800">
+          <span class="text-2xl">
+            <img src="public/images/logo.webp" alt="logo da pagina" class="w-16 ">
+          </span>
+          <p class="font-semibold text-2xl">Compser</p>
         </div>
 
+        <nav class="col-span-4 h-full w-full flex justify-center gap-8 items-center border-b border-gray-800">
+          <a href="">Projects</a>
+          <a href="">About </a>
+          <a href="">Team </a>
+          <a href="">Contact</a>
+        </nav>
+
+        <div
+          class="col-span-6 h-full w-full flex items-center justify-center border-b border-l border-gray-800 text-2xl font-semibold">
+          adrianodeev1@gmail.com
+        </div>
+
+        <div class="col-span-3 h-full w-full flex items-center justify-center border-r border-gray-800">
+          <a href=""><i class="bi bi-pencil pr-2 text-sm"></i>Services</a>
+        </div>
+
+        <div class="col-span-3 h-full w-full flex items-center justify-center gap-4 border-r border-gray-800">
+          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+            <i class="bi bi-facebook text-white"></i>
+          </a>
+          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+            <i class="bi bi-instagram text-white"></i>
+          </a>
+          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+            <i class="bi bi-twitter text-white"></i>
+          </a>
+          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+            <i class="bi bi-envelope text-white"></i>
+          </a>
+        </div>
+
+        <div class="col-span-4 h-full w-full flex items-center justify-center">
+          &copy; 2025 Adriano Frontend Developer
+        </div>
       </div>
-    </header>
+
+    </div>
   </footer>
+
   <script src="src/js/main.js" type="module"></script>
 </body>
 
