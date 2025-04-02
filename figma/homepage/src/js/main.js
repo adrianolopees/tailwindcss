@@ -1,34 +1,35 @@
-const txtEfeito = document.querySelector(".txtEfeito");
-const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Corrigi a string do alfabeto
+const txtEfeitos = document.querySelectorAll(".txtEfeito");
+const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-let intervalo = null;
+txtEfeitos.forEach((txtEfeito) => {
+  let intervalo = null;
 
-txtEfeito.onmouseover = () => {
-  let contador = 0;
-  clearInterval(intervalo);
+  txtEfeito.addEventListener("mouseover", () => {
+    let contador = 0;
+    clearInterval(intervalo);
 
-  // Definindo o texto que será mostrado ao final (texto original)
-  const textoOriginal = txtEfeito.dataset.texto;
+    const textoOriginal = txtEfeito.dataset.texto; // Apenas o texto, sem o ícone
+    const iconeHTML = txtEfeito.querySelector("i")?.outerHTML || ""; // Captura o ícone
 
-  intervalo = setInterval(() => {
-    txtEfeito.innerHTML = txtEfeito.innerHTML
-      .split("")
-      .map((letra, i) => {
-        if (i < contador) {
-          // Mostra a letra correta do texto original
-          return textoOriginal[i];
-        } else {
-          // Substitui com uma letra aleatória do alfabeto
-          return alfabeto[Math.floor(Math.random() * 26)];
-        }
-      })
-      .join("");
+    intervalo = setInterval(() => {
+      txtEfeito.innerHTML =
+        iconeHTML +
+        textoOriginal
+          .split("")
+          .map((letra, i) => {
+            if (i < contador) {
+              return textoOriginal[i]; // Mostra a letra correta
+            } else {
+              return alfabeto[Math.floor(Math.random() * alfabeto.length)]; // Letra aleatória
+            }
+          })
+          .join("");
 
-    // Quando o contador atingir o comprimento do texto original, para o intervalo
-    if (contador >= textoOriginal.length) {
-      clearInterval(intervalo);
-    }
+      if (contador >= textoOriginal.length) {
+        clearInterval(intervalo);
+      }
 
-    contador++;
-  }, 30);
-};
+      contador++;
+    }, 40);
+  });
+});

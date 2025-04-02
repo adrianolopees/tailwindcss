@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/assets/output.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,63 +16,67 @@
 </head>
 
 <body class="bg-black">
-  <header class="container mx-auto px-32">
-    <div class="h-28 w-full border rounded-2xl border-gray-800 text-slate-200  mt-12 mb-6">
-      <div class="grid grid-cols-12 h-full items-center ">
+  <header class="container mx-auto px-4 sm:px-8 lg:px-32">
+    <div class="h-28 w-full border rounded-2xl border-gray-800 text-slate-200 mt-12 mb-6">
+      <div class="grid grid-cols-12 h-full items-center">
 
-        <div class=" row-span-2 col-span-2 w-full h-full flex items-center justify-center border-r border-gray-800">
+        <div class="col-span-2 row-span-3 w-full h-full flex items-center justify-center border-r border-gray-800">
           <span class="text-2xl">
-            <img src="public/images/logo.webp" alt="logo da pagina" class="w-16 ">
+            <img src="public/images/logo.webp" alt="logo da pagina" class="w-12 sm:w-16">
           </span>
         </div>
 
-        <nav class="col-span-8 h-full w-full flex justify-center gap-8 items-center border-b border-gray-800">
+        <nav
+          class="col-span-10 row-span-2 hidden sm:flex h-full w-full justify-center gap-4 sm:gap-8 items-center border-b border-gray-800">
           <a href="#work" class="txtEfeito" data-texto="Projects">Projects</a>
-          <a href="#home">About </a>
-          <a href="#members">Team </a>
-          <a href="#talk">Contact</a>
+          <a href="#home" class="txtEfeito" data-texto="About">About</a>
+          <a href="#members" class="txtEfeito" data-texto="Team">Team</a>
+          <a href="#talk" class="txtEfeito" data-texto="Contact">Contact</a>
         </nav>
 
-        <div class="col-span-2 h-full w-full flex items-center justify-center border-b border-l border-gray-800">
-          <i class="bi bi-list text-3xl inline-block font-thin scale-x-[4] scale-y-[0.9]"></i>
+        <div
+          class="col-span-1 sm:hidden  h-full w-full flex items-center justify-center border-b border-l border-gray-800">
+          <i class="bi bi-list text-3xl"></i>
         </div>
 
-        <div class="col-span-5 h-full w-full flex items-center justify-center border-r border-gray-800">
-          <a href="#services"><i class="bi bi-pencil pr-2 text-sm"></i>Services</a>
+        <div class="col-span-5 hidden sm:flex h-full w-full items-center justify-center border-r border-gray-800">
+          <a href="#services" class="txtEfeito" data-texto="Services"><i
+              class="bi bi-pencil pr-2 text-sm"></i>Services</a>
         </div>
 
-        <div class="col-span-5 h-full w-full flex items-center justify-center">
-          <a href="#footer"><i class="bi bi-calendar pr-2 text-sm"></i>Get in touch</a>
+        <div class="col-span-5 hidden sm:flex h-full w-full items-center justify-center">
+          <a href="#footer" class="txtEfeito" data-texto="Get in touch"><i class="bi bi-calendar pr-2 text-sm"></i>Get
+            in touch</a>
         </div>
       </div>
-
     </div>
   </header>
 
   <main>
-    <section id="home" class="container mx-auto px-32">
+    <section id="home" class="container mx-auto sm:px-32 px-12">
       <div class="flex items-center justify-center  ">
-        <h1 class="text-white text-9xl leading-none font-semibold max-w-7xl text-center"> Krate design and
+        <h1 class="text-white sm:text-9xl text-6xl leading-none font-semibold sm:max-w-7xl text-center"> Krate design
+          and
           motion
           studio</h1>
       </div>
 
       <div class="flex items-center justify-center ">
-        <img src="public/images/home.webp" alt="imagem home ondas coloridas" class="mt-32 ">
+        <img src="public/images/home.webp" alt="imagem home ondas coloridas" class="sm:mt-32 mt-12 ">
       </div>
 
-      <div class="font-semibold mt-32 flex flex-row justify-between">
-        <div class="text-white text-4xl max-w-3xl ">
-          <p>We are passionate about creating visually <br>
-            stunning and functional solutions that<br>
+      <div class="font-semibold sm:mt-32 mt-12 sm:flex sm:flex-row sm:justify-between">
+        <div class="text-white sm:text-4xl text-2xl sm:max-w-3xl ">
+          <p>We are passionate about creating visually
+            stunning and functional solutions that
             communicate effectively. I
-            have a keen eye for <br>
+            have a keen eye for
             detail and a deep understanding of design principles, which I use to deliver projects
             that
             exceed my clients' expectations.</p>
         </div>
 
-        <div class="text-gray-400 text-3xl flex flex-row gap-20 leading-loose">
+        <div class="text-gray-400 sm:text-3xl text-2xl flex flex-row justify-center mt-8 gap-20 leading-loose">
           <ul class="space-y-4 ">
             <li class="flex items-center"><i class="bi bi-bing pr-3"></i><span>Krate</span></li>
             <li class="flex items-center"><i class="bi bi-bug-fill pr-3"></i><span>Massui</span></li>
@@ -87,47 +92,47 @@
 
     </section>
 
-    <section id="services" class="container mx-auto px-32 mt-32">
+    <section id="services" class="container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
       <div class="text-white">
-        <a href="#" class="text-xl font-semibold"><i class="bi bi-arrow-return-right"></i>
+        <a href="#" class="sm:text-xl text-lg font-semibold"><i class="bi bi-arrow-return-right"></i>
           Our Services</a>
 
-        <ul class="mt-16 text-4xl font-semibold flex flex-col gap-9">
-          <li class="flex items-center border-b-gray-800 border-b pb-9 justify-between">
+        <ul class="sm:mt-16 mt-8 sm:text-4xl font-semibold flex flex-col gap-9">
+          <li class="flex items-center border-b-gray-800 border-b sm:pb-9 pb-4 justify-between">
             <div class="flex items-center">
-              <img src="public/images/brand.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              <img src="public/images/brand.jpg" class="sm:w-40 w-20 sm:h-10 h-5 mr-9 rounded-full object-cover">
               Brand Identity
             </div>
             <i class="bi bi-plus"></i>
           </li>
 
-          <li class="flex items-center border-b-gray-800 border-b pb-9 justify-between">
+          <li class="flex items-center border-b-gray-800 border-b sm:pb-9 pb-4 justify-between">
             <div class="flex items-center">
-              <img src="public/images/consultancy.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              <img src="public/images/consultancy.jpg" class="sm:w-40 w-20 sm:h-10 h-5 mr-9 rounded-full object-cover">
               Consultancy
             </div>
             <i class="bi bi-plus"></i>
           </li>
 
-          <li class="flex items-center border-b-gray-800 border-b pb-9 justify-between">
+          <li class="flex items-center border-b-gray-800 border-b sm:pb-9 pb-4 justify-between">
             <div class="flex items-center">
-              <img src="public/images/app.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              <img src="public/images/app.jpg" class="sm:w-40 w-20 sm:h-10 h-5 mr-9 rounded-full object-cover">
               App Development
             </div>
             <i class="bi bi-plus"></i>
           </li>
 
-          <li class="flex items-center border-b-gray-800 border-b pb-9 justify-between">
+          <li class="flex items-center border-b-gray-800 border-b sm:pb-9 pb-4 justify-between">
             <div class="flex items-center">
-              <img src="public/images/web.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              <img src="public/images/web.jpg" class="sm:w-40 w-20 sm:h-10 h-5 mr-9 rounded-full object-cover">
               Web & Mobile Design
             </div>
             <i class="bi bi-plus"></i>
           </li>
 
-          <li class="flex items-center border-b-gray-800 border-b pb-9 justify-between">
+          <li class="flex items-center border-b-gray-800 border-b sm:pb-9 pb-4 justify-between">
             <div class="flex items-center">
-              <img src="public/images/pack.jpg" class="w-40 h-10 mr-9 rounded-full object-cover">
+              <img src="public/images/pack.jpg" class="sm:w-40 w-20 sm:h-10 h-5 mr-9 rounded-full object-cover">
               Packaging
             </div>
             <i class="bi bi-plus"></i>
@@ -136,97 +141,99 @@
       </div>
     </section>
 
-    <section id="work" class=" container mx-auto px-32 mt-32">
-      <a href="#" class="text-2xl font-semibold text-white ">
+    <section id="work" class=" container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
+      <a href="#" class="sm:text-xl text-lg sm:mt-16 mt-8 font-semibold text-white ">
         <i class="bi bi-arrow-return-right"></i> Recent Work
       </a>
-      <div class="mt-16 text-white ">
-        <div class="grid grid-cols-2 gap-8">
-          <div class="rounded-3xl border border-gray-800 pb-3">
+      <div class="sm:mt-16 mt-8 text-white ">
+        <div class="grid sm:grid-cols-2 sm:gap-8 gap-4">
+          <div class="rounded-3xl border border-gray-800 sm:pb-3">
             <img src="public/images/grid2.jpg" alt="Imagem aleatória"
               class="rounded-tr-3xl rounded-tl-3xl w-full h-auto" />
-            <p class=" text-2xl font-semibold p-10">Galaxia Branding</p>
+            <p class=" sm:text-2xl text-xl font-semibold sm:p-10 p-5">Galaxia Branding</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-3">
+          <div class="rounded-3xl border border-gray-800 sm:pb-3">
             <img src="public/images/grid1.jpg" alt="Imagem aleatória"
               class="rounded-tr-3xl rounded-tl-3xl w-full h-auto" />
-            <p class="text-2xl font-semibold p-10">John Mayer NYC</p>
+            <p class="sm:text-2xl text-xl font-semibold sm:p-10 p-5">John Mayer NYC</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-3">
+          <div class="rounded-3xl border border-gray-800 sm:pb-3">
             <img src="public/images/grid3.jpg" alt="Imagem aleatória"
               class="rounded-tr-3xl rounded-tl-3xl w-full h-auto" />
-            <p class="text-2xl font-semibold p-10">Nayzak Patterns</p>
+            <p class="sm:text-2xl text-xl font-semibold sm:p-10 p-5">Nayzak Patterns</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-3">
+          <div class="rounded-3xl border border-gray-800 sm:pb-3">
             <img src="public/images/grid4.jpg" alt="Imagem aleatória"
               class="rounded-tr-3xl rounded-tl-3xl w-full h-auto cover" />
-            <p class="text-2xl font-semibold p-10">Crave Chips</p>
+            <p class="sm:text-2xl text-xl font-semibold sm:p-10 p-5">Crave Chips</p>
           </div>
         </div>
-        <button class="w-full py-3 mt-8 rounded-3xl border border-gray-800 text-xl font-semibold">View all work <i
-            class="bi bi-arrow-up-right"></i>
+        <button
+          class="w-full py-3 mt-8 rounded-3xl text-gray-500 hover:text-gray-300 duration-300 border border-gray-800 sm:text-xl text-lg font-semibold">View
+          all work <i class="bi bi-arrow-up-right"></i>
         </button>
       </div>
     </section>
 
-    <section id="members" class="container mx-auto px-32 mt-32">
-      <a href="#" class="text-2xl font-semibold text-white">
+    <section id="members" class="container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
+      <a href="#" class="sm:text-xl text-lg  font-semibold text-white">
         <i class="bi bi-arrow-return-right"></i> Our Team
       </a>
-      <div class="mt-16 text-white">
-        <div class="grid grid-cols-4 gap-10">
-          <div class="col-span-2 ">
-            <p class="text-[42px] font-semibold leading-[46px]">
+      <div class="sm:mt-16 mt-8 text-white">
+        <div class="grid sm:grid-cols-4 gap-10">
+          <div class="sm:col-span-2 ">
+            <p class="sm:text-[42px] text-xl font-semibold sm:leading-[46px]">
               We are passinonate about creating visually stunning and functional solutions that communicate effectively.
             </p>
           </div>
-          <div class="rounded-3xl border border-gray-800 pb-4">
+          <div class="rounded-3xl border border-gray-800 sm:pb-4 pb-2">
             <img src="public/images/homem1.jpg" alt="Imagem aleatória" class="rounded-tr-3xl rounded-tl-3xl w-full" />
-            <p class="text-xl font-semibold px-2 mt-8">João Batista</p>
-            <p class="text-sm font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
+            <p class="sm:text-xl text-lg font-semibold px-2 sm:mt-8 mt-4">João Batista</p>
+            <p class="sm:text-sm text-6 font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-4">
+          <div class="rounded-3xl border border-gray-800 sm:pb-4 pb-2">
             <img src="public/images/homem2.jpg" alt="Imagem aleatória" class="rounded-tr-3xl rounded-tl-3xl w-full" />
-            <p class="text-xl font-semibold px-2 mt-8">Fernando Torres</p>
-            <p class="text-sm font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
+            <p class="sm:text-xl text-lg font-semibold px-2 sm:mt-8 mt-4">Fernando Torres</p>
+            <p class="sm:text-sm text-xs font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-4">
+          <div class="rounded-3xl border border-gray-800 sm:pb-4 pb-2">
             <img src="public/images/homem3.jpg" alt="Imagem aleatória" class="rounded-tr-3xl rounded-tl-3xl w-full " />
-            <p class="text-xl font-semibold px-2 mt-8">Pedro Ribeiro</p>
-            <p class="text-sm font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
+            <p class="sm:text-xl text-lg font-semibold px-2 sm:mt-8 mt-4">Pedro Ribeiro</p>
+            <p class="sm:text-sm text-xs font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-4">
+          <div class="rounded-3xl border border-gray-800 sm:pb-4 pb-2">
             <img src="public/images/homem4.jpg" alt="Imagem aleatória" class="rounded-tr-3xl rounded-tl-3xl w-full " />
-            <p class="text-xl font-semibold px-2 mt-8">Antônio Melo</p>
-            <p class="text-sm font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
+            <p class="sm:text-xl text-lg font-semibold px-2 sm:mt-8 mt-4">Antônio Melo</p>
+            <p class="sm:text-sm text-xs font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-4">
+          <div class="rounded-3xl border border-gray-800 sm:pb-4 pb-2">
             <img src="public/images/homem5.jpg" alt="Imagem aleatória" class="rounded-tr-3xl rounded-tl-3xl w-full " />
-            <p class="text-xl font-semibold px-2 mt-8">Henrique Silva</p>
-            <p class="text-sm font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
+            <p class="sm:text-xl text-lg font-semibold px-2 sm:mt-8 mt-4">Henrique Silva</p>
+            <p class="sm:text-sm text-xs font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
           </div>
 
-          <div class="rounded-3xl border border-gray-800 pb-4">
+          <div class="rounded-3xl border border-gray-800 sm:pb-4 pb-2">
             <img src="public/images/homem6.jpg" alt="Imagem aleatória" class="rounded-tr-3xl rounded-tl-3xl w-full " />
-            <p class="text-xl font-semibold px-2 mt-8">Otávio Miranda</p>
-            <p class="text-sm font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
+            <p class="sm:text-xl text-lg font-semibold px-2 sm:mt-8 mt-4">Otávio Miranda</p>
+            <p class="sm:text-sm text-xs font-semibold px-2 mt-2 text-gray-500">Managing Director</p>
           </div>
 
         </div>
-        <button class="w-full py-3 mt-8 rounded-3xl border border-gray-800 text-xl font-semibold">See all members<i
-            class="bi bi-arrow-up-right"></i>
+        <button
+          class="w-full py-3 mt-8 rounded-3xl text-gray-500 hover:text-gray-300 duration-300 border border-gray-800 text-xl font-semibold ">See
+          all members<i class="bi bi-arrow-up-right"></i>
         </button>
       </div>
     </section>
 
-    <section id="talk" class="container mx-auto px-32 mt-32">
+    <section id="talk" class="container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
       <div class="relative">
 
         <img src="public/images/imgfooter.avif" alt="onda colorida" class="w-full opacity-75 rounded-3xl">
@@ -234,17 +241,18 @@
         <div
           class="absolute inset-0 flex flex-col items-center justify-center text-center max-w-2xl mx-auto text-white">
 
-          <h2 class="text-8xl font-bold mb-4">
+          <h2 class="sm:text-8xl text-3xl font-bold mb-4">
             Have an idea? Let's talk.
           </h2>
 
-          <p class="text-xl">
+          <p class="sm:text-xl text-sm">
             Visually attractive design from concepts to final result. We create solutions that are bold
             and
             forward-looking.
           </p>
-          <button class="bg-white text-black font-semibold py-3 px-8 rounded-full mt-12"> <i
-              class="bi bi-calendar pr-2"></i>Free
+          <button
+            class="bg-white text-black hover:scale-105 duration-300 font-semibold sm:py-3 py-2 sm:px-8 px-4 rounded-full mt-12 text-sm">
+            <i class="bi bi-calendar pr-2 "></i>Free
             Consultation</button>
 
         </div>
@@ -266,37 +274,44 @@
         </div>
 
         <nav class="col-span-4 h-full w-full flex justify-center gap-8 items-center border-b border-gray-800">
-          <a href="">Projects</a>
-          <a href="">About </a>
-          <a href="">Team </a>
-          <a href="">Contact</a>
+          <a href="#work" class="txtEfeito" data-texto="Projects">Projects</a>
+          <a href="#home" class="txtEfeito" data-texto="About">About </a>
+          <a href="#members" class="txtEfeito" data-texto="Team">Team </a>
+          <a href="#talk" class="txtEfeito" data-texto="Contact">Contact</a>
         </nav>
 
         <div
-          class="col-span-6 h-full w-full flex items-center justify-center border-b border-l border-gray-800 text-2xl font-semibold">
+          class="col-span-6 h-full w-full flex items-center justify-center border-b border-l border-gray-800 text-2xl font-semibold txtEfeito"
+          data-texto="adrianodeev1@gmail.com">
           adrianodeev1@gmail.com
         </div>
 
         <div class="col-span-3 h-full w-full flex items-center justify-center border-r border-gray-800">
-          <a href=""><i class="bi bi-pencil pr-2 text-sm"></i>Services</a>
+          <a href="" class="txtEfeito" data-texto="Services"><i class="bi bi-pencil pr-2 text-sm "></i>Services</a>
         </div>
 
         <div class="col-span-3 h-full w-full flex items-center justify-center gap-4 border-r border-gray-800">
-          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+
+          <a href="#"
+            class="bg-slate-800 hover:bg-slate-900 duration-300 rounded-full w-10 h-10 flex items-center justify-center">
             <i class="bi bi-facebook text-white"></i>
           </a>
-          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+          <a href="#"
+            class="bg-slate-800 hover:bg-slate-900 duration-300 rounded-full w-10 h-10 flex items-center justify-center">
             <i class="bi bi-instagram text-white"></i>
           </a>
-          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+          <a href="#"
+            class="bg-slate-800 hover:bg-slate-900 duration-300 rounded-full w-10 h-10 flex items-center justify-center ">
             <i class="bi bi-twitter text-white"></i>
           </a>
-          <a href="#" class="bg-slate-800 rounded-full w-10 h-10 flex items-center justify-center">
+          <a href="#"
+            class="bg-slate-800 hover:bg-slate-900 duration-300 rounded-full w-10 h-10 flex items-center justify-center">
             <i class="bi bi-envelope text-white"></i>
           </a>
         </div>
 
-        <div class="col-span-4 h-full w-full flex items-center justify-center">
+        <div class="col-span-4 h-full w-full flex items-center justify-center txtEfeito"
+          data-texto="&copy; 2025 Adriano Frontend Developer">
           &copy; 2025 Adriano Frontend Developer
         </div>
       </div>

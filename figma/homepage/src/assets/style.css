@@ -14,4 +14,10 @@
     font-weight: 300;
     font-style: normal;
   }
+  header,
+  footer {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
