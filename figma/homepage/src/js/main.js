@@ -38,28 +38,36 @@ const btnBurguer = document.getElementById("btnBurguer");
 const icon = btnBurguer.querySelector("i");
 const overlay = document.getElementById("overlay");
 const navBar = document.getElementById("nav");
+const menuLinks = navBar.querySelectorAll("a");
 
 function menuBurguer() {
-  overlay.classList.toggle("invisible");
-  overlay.classList.toggle("opacity-0");
-  navBar.classList.toggle("hidden");
+  const isOpen = !navBar.classList.contains("hidden");
 
-  if (icon.classList.contains("bi-list")) {
-    icon.classList.remove("bi-list");
-    icon.classList.add("bi-x");
+  if (isOpen) {
+    fecharMenu();
   } else {
-    icon.classList.remove("bi-x");
-    icon.classList.add("bi-list");
+    abrirMenu();
   }
 }
 
-btnBurguer.addEventListener("click", menuBurguer);
+function abrirMenu() {
+  overlay.classList.remove("invisible", "opacity-0"); // Garante que o overlay apareça
+  overlay.classList.add("opacity-100"); // Se precisar de um efeito de escurecimento
+  navBar.classList.remove("hidden");
+  document.body.classList.add("overflow-hidden");
 
-overlay.addEventListener("click", () => {
-  overlay.classList.add("invisible");
-  overlay.classList.remove("opacity-50");
+  icon.classList.replace("bi-list", "bi-x");
+}
+
+function fecharMenu() {
+  overlay.classList.add("invisible", "opacity-0");
+  overlay.classList.remove("opacity-100");
   navBar.classList.add("hidden");
+  document.body.classList.remove("overflow-hidden");
 
-  icon.classList.remove("bi-x");
-  icon.classList.add("bi-list");
-});
+  icon.classList.replace("bi-x", "bi-list");
+}
+
+btnBurguer.addEventListener("click", menuBurguer);
+overlay.addEventListener("click", fecharMenu);
+menuLinks.forEach((link) => link.addEventListener("click", fecharMenu));
