@@ -1161,6 +1161,22 @@ header,
     margin-top: 2rem;
   }
 
+  .sm\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .sm\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .sm\:mt-28 {
+    margin-top: 7rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1209,6 +1225,10 @@ header,
     flex-direction: row;
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
   }
@@ -1250,6 +1270,21 @@ header,
   .sm\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .sm\:pb-3 {
@@ -1303,11 +1338,40 @@ header,
     line-height: 1.75rem;
   }
 
+  .sm\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .sm\:leading-\[46px\] {
     line-height: 46px;
   }
 
   .sm\:opacity-75 {
     opacity: 0.75;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
