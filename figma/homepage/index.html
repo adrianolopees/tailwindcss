@@ -16,12 +16,11 @@
 </head>
 
 <body class="bg-black">
-  <header class="container mx-auto sm:px-32 px-8">
-    <div class="sm:h-28 h-20 w-full border rounded-2xl border-gray-800 text-slate-200 mt-12 mb-6">
-
+  <header class="px-8 lg:px-32">
+    <div class="h-20 sm:h-24 md:h-32 border rounded-3xl border-gray-800 text-slate-200 mt-12 mb-6">
       <div class="grid grid-cols-12 h-full items-center">
         <span id="nav"
-          class="absolute hidden top-28 left-1/3 text-3xl text-white transition-transform duration-300 ease-in-out z-20">
+          class="absolute hidden top-28 left-1/3 text-white transition-transform duration-300 ease-in-out z-20">
           <ul class="flex flex-col gap-20">
             <a href="#work">
               <li class="hover:bg-white hover:text-black cursor-pointer duration-300">Projects</li>
@@ -76,20 +75,21 @@
   </header>
 
   <main>
-    <section id="home" class="container mx-auto sm:px-32 px-12">
+    <section id="home" class="px-8 lg:px-32">
       <div class="flex items-center justify-center  ">
-        <h1 class="text-white sm:text-9xl text-6xl leading-none font-semibold sm:max-w-7xl text-center"> Krate design
-          and
-          motion
-          studio</h1>
+        <h1
+          class="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl mt-6 sm:mt-9  max-w-5xl leading-none font-semibold text-center">
+          Krate design and <br>
+          motion studio</h1>
       </div>
 
       <div class="flex items-center justify-center ">
         <img src="public/images/home.webp" alt="imagem home ondas coloridas" class="sm:mt-32 mt-12 ">
       </div>
 
-      <div class="font-semibold sm:mt-32 mt-12 sm:flex sm:flex-row sm:justify-between">
-        <div class="text-white sm:text-4xl text-2xl sm:max-w-3xl ">
+      <div class="font-semibold mt-12 sm:mt-32 flex flex-col  gap-32 lg:flex-row lg:justify-between items-center">
+
+        <div class="text-white sm:text-4xl text-2xl w-full">
           <p>We are passionate about creating visually
             stunning and functional solutions that
             communicate effectively. I
@@ -99,23 +99,24 @@
             exceed my clients' expectations.</p>
         </div>
 
-        <div class="text-gray-400 sm:text-3xl text-xl flex flex-row justify-between mt-8 sm:gap-20 leading-loose">
-          <ul class="space-y-4 ">
-            <li class="flex items-center"><i class="bi bi-bing pr-3"></i><span>Krate</span></li>
-            <li class="flex items-center"><i class="bi bi-bug-fill pr-3"></i><span>Massui</span></li>
-            <li class="flex items-center"><i class="bi bi-bucket-fill pr-3"></i><span>Altall</span></li>
+        <div class="text-gray-400 text-xl sm:text-3xl flex flex-row mt-8 justify-between w-full">
+          <ul class="flex flex-col gap-4 ">
+            <li><i class="bi bi-bing pr-3"></i><span>Krate</span></li>
+            <li><i class="bi bi-bug-fill pr-3"></i><span>Massui</span></li>
+            <li><i class="bi bi-bucket-fill pr-3"></i><span>Altall</span></li>
           </ul>
-          <ul class="space-y-4">
-            <li class="flex items-center"><i class="bi bi-car-front-fill pr-3"></i><span>Kalo</span></li>
-            <li class="flex items-center"><i class="bi bi-cc-circle-fill pr-3"></i><span>Kinua</span></li>
-            <li class="flex items-center"><i class="bi bi-circle-square pr-3"></i><span>TANO</span></li>
+          <ul class="flex flex-col gap-4">
+            <li><i class="bi bi-car-front-fill pr-3"></i><span>Kalo</span></li>
+            <li><i class="bi bi-cc-circle-fill pr-3"></i><span>Kinua</span></li>
+            <li><i class="bi bi-circle-square pr-3"></i><span>TANO</span></li>
           </ul>
         </div>
+
       </div>
 
     </section>
 
-    <section id="services" class="container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
+    <section id="services" class="px-8 lg:px-32 sm:mt-32 mt-12">
       <div class="text-white">
         <a href="#" class="sm:text-xl text-sm font-semibold"><i class="bi bi-arrow-return-right"></i>
           Our Services</a>
@@ -164,7 +165,7 @@
       </div>
     </section>
 
-    <section id="work" class=" container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
+    <section id="work" class=" px-8 lg:px-32 sm:mt-32 mt-12">
       <a href="#" class="sm:text-xl text-sm sm:mt-16 mt-8 font-semibold text-white ">
         <i class="bi bi-arrow-return-right"></i> Recent Work
       </a>
@@ -201,7 +202,7 @@
       </div>
     </section>
 
-    <section id="members" class="container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
+    <section id="members" class="px-8 lg:px-32 sm:mt-32 mt-12">
       <a href="#" class="sm:text-xl text-sm  font-semibold text-white">
         <i class="bi bi-arrow-return-right"></i> Our Team
       </a>
@@ -256,7 +257,7 @@
       </div>
     </section>
 
-    <section id="talk" class="container mx-auto sm:px-32 px-12 sm:mt-32 mt-12">
+    <section id="talk" class="px-8 lg:px-32 sm:mt-32 mt-12">
       <div class="relative">
 
         <img src="public/images/imgfooter.avif" alt="onda colorida" class="w-full sm:opacity-75 opacity-45 rounded-3xl">
@@ -284,7 +285,7 @@
     </section>
   </main>
 
-  <footer id="footer" class="container mx-auto sm:px-32 px-8 mb-20">
+  <footer id="footer" class="px-8 lg:px-32 mb-20">
     <div class="sm:h-52 h-32 w-full border rounded-2xl border-gray-800 text-slate-200  mt-12">
       <div class="grid grid-cols-12 grid-rows-2 h-full items-center ">
 
