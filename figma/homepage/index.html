@@ -21,7 +21,7 @@
       <div class="grid grid-cols-12 h-full items-center">
         <span id="nav"
           class="absolute hidden top-28 left-1/3 text-white transition-transform duration-300 ease-in-out z-20">
-          <ul class="flex flex-col gap-20">
+          <ul class="flex flex-col gap-28 text-2xl">
             <a href="#work">
               <li class="hover:bg-white hover:text-black cursor-pointer duration-300">Projects</li>
             </a>
@@ -47,7 +47,7 @@
         </span>
 
         <nav
-          class="col-span-10 row-span-2 hidden sm:flex h-full w-full justify-center gap-8 items-center border-b border-gray-800">
+          class="col-span-10 row-span-2 hidden sm:flex h-full w-full justify-center gap-20 items-center border-b border-gray-800">
           <a href="#work" class="txtEfeito" data-texto="Projects">Projects</a>
           <a href="#home" class="txtEfeito" data-texto="About">About</a>
           <a href="#members" class="txtEfeito" data-texto="Team">Team</a>
@@ -288,10 +288,10 @@
 
   <footer id="footer" class="px-8 lg:px-32 mb-20">
     <div class="sm:h-52 h-32 w-full border rounded-2xl border-gray-800 text-slate-200 mt-12">
-      <div class="grid grid-cols-12 grid-rows-2 h-full items-center ">
+      <div class="grid grid-cols-12 sm:grid-rows-2 h-full items-center ">
 
         <div
-          class="row-span-2 lg:col-span-2 col-span-2 w-full h-full flex items-center justify-center flex-row border-r border-gray-800">
+          class="sm:row-span-2 lg:col-span-2 col-span-2 w-full h-full flex items-center justify-center flex-row border-r border-gray-800">
           <a href="#" class="text-2xl">
             <img src="public/images/logo.webp" alt="logo da pagina" class="w-16 ">
           </a>
@@ -337,7 +337,8 @@
           </a>
         </div>
 
-        <div class="col-span-10 lg:col-span-10 lg:col-start-3 h-full w-full flex items-center justify-center txtEfeito"
+        <div
+          class="col-span-10 hidden lg:col-span-10 lg:col-start-3 h-full w-full sm:flex items-center justify-center txtEfeito"
           data-texto="&copy; 2025 Adriano Frontend Developer">
           &copy; 2025 Adriano Frontend Developer
         </div>
