@@ -650,10 +650,6 @@ header,
   grid-row: span 3 / span 3;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -775,10 +771,6 @@ header,
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -811,6 +803,10 @@ header,
   gap: 5rem;
 }
 
+.gap-28 {
+  gap: 7rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -825,14 +821,6 @@ header,
 
 .gap-9 {
   gap: 2.25rem;
-}
-
-.gap-28 {
-  gap: 7rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .overflow-hidden {
